@@ -8,31 +8,31 @@
 
     <Button
         android:id="@+id/AirType"
-        android:layout_width="100"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ΤΥΠΟΣ ΑΕΡΑ"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="337dp" />
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="341dp" />
 
     <Button
         android:id="@+id/AirIntensity"
-        android:layout_width="100"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ΕΝΤΑΣΗ ΑΕΡΑ"
         tools:layout_editor_absoluteX="255dp"
-        tools:layout_editor_absoluteY="337dp" />
+        tools:layout_editor_absoluteY="341dp" />
 
     <Button
         android:id="@+id/exit"
-        android:layout_width="100"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ΕΞΟΔΟΣ"
-        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteX="62dp"
         tools:layout_editor_absoluteY="650dp" />
 
     <Button
         android:id="@+id/help"
-        android:layout_width="100"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ΒΟΗΘΕΙΑ"
         tools:layout_editor_absoluteX="255dp"
@@ -56,25 +56,26 @@
 
     <ImageButton
         android:id="@+id/minus"
-        android:layout_width="50"
-        android:layout_height="50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:src="@drawable/ic_launcher_foreground"
-        tools:layout_editor_absoluteX="105dp"
-        tools:layout_editor_absoluteY="216dp" />
+        tools:layout_editor_absoluteX="23dp"
+        tools:layout_editor_absoluteY="191dp" />
 
     <ImageButton
         android:id="@+id/plus"
-        android:layout_width="50"
-        android:layout_height="50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:src="@drawable/ic_launcher_foreground"
-        tools:layout_editor_absoluteX="249dp"
-        tools:layout_editor_absoluteY="216dp" />
+        tools:layout_editor_absoluteX="255dp"
+        tools:layout_editor_absoluteY="191dp" />
 
     <ImageButton
         android:id="@+id/open"
-        android:layout_width="50"
-        android:layout_height="50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
         android:src="@android:drawable/ic_notification_overlay"
         tools:layout_editor_absoluteX="180dp"
-        tools:layout_editor_absoluteY="518dp" />
+        tools:layout_editor_absoluteY="513dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

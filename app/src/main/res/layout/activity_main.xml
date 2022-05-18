@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AirType">
+
+    <Button
+        android:id="@+id/AirType"
+        android:layout_width="100"
+        android:layout_height="wrap_content"
+        android:text="ΤΥΠΟΣ ΑΕΡΑ"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="337dp" />
+
+    <Button
+        android:id="@+id/AirIntensity"
+        android:layout_width="100"
+        android:layout_height="wrap_content"
+        android:text="ΕΝΤΑΣΗ ΑΕΡΑ"
+        tools:layout_editor_absoluteX="255dp"
+        tools:layout_editor_absoluteY="337dp" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="100"
+        android:layout_height="wrap_content"
+        android:text="ΕΞΟΔΟΣ"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="650dp" />
+
+    <Button
+        android:id="@+id/help"
+        android:layout_width="100"
+        android:layout_height="wrap_content"
+        android:text="ΒΟΗΘΕΙΑ"
+        tools:layout_editor_absoluteX="255dp"
+        tools:layout_editor_absoluteY="650dp" />
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Smart Toyotomi"
+        tools:layout_editor_absoluteX="155dp"
+        tools:layout_editor_absoluteY="46dp" />
+
+    <TextView
+        android:id="@+id/Temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temp"
+        tools:layout_editor_absoluteX="187dp"
+        tools:layout_editor_absoluteY="143dp" />
+
+    <ImageButton
+        android:id="@+id/minus"
+        android:layout_width="50"
+        android:layout_height="50"
+        android:src="@drawable/ic_launcher_foreground"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="216dp" />
+
+    <ImageButton
+        android:id="@+id/plus"
+        android:layout_width="50"
+        android:layout_height="50"
+        android:src="@drawable/ic_launcher_foreground"
+        tools:layout_editor_absoluteX="249dp"
+        tools:layout_editor_absoluteY="216dp" />
+
+    <ImageButton
+        android:id="@+id/open"
+        android:layout_width="50"
+        android:layout_height="50"
+        android:src="@android:drawable/ic_notification_overlay"
+        tools:layout_editor_absoluteX="180dp"
+        tools:layout_editor_absoluteY="518dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

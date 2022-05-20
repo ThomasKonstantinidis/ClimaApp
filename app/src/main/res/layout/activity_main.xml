@@ -10,11 +10,12 @@
         android:id="@+id/AirType"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="344dp"
+        android:layout_marginBottom="340dp"
+        android:backgroundTint="#485BDA"
         android:text="ΤΥΠΟΣ ΑΕΡΑ"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintHorizontal_bias="0.123"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -22,10 +23,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="340dp"
+        android:backgroundTint="#485BDA"
         android:text="ΕΝΤΑΣΗ ΑΕΡΑ"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintHorizontal_bias="0.904"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -33,10 +35,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
+        android:backgroundTint="#ED2E20"
         android:text="ΕΞΟΔΟΣ"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.194"
+        app:layout_constraintHorizontal_bias="0.22"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -44,28 +47,31 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
+        android:backgroundTint="#ED2E20"
         android:text="ΒΟΗΘΕΙΑ"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.819"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
+    <ImageView
         android:id="@+id/logo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="612dp"
-        android:text="Smart Toyotomi"
+        android:layout_width="280dp"
+        android:layout_height="109dp"
+        android:layout_marginBottom="524dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/clima"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/Temperature"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="548dp"
+        android:layout_marginBottom="456dp"
         android:text="Temp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -74,32 +80,38 @@
 
     <ImageButton
         android:id="@+id/minus"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="392dp"
-        android:src="@drawable/ic_launcher_foreground"
+        android:layout_width="80dp"
+        android:layout_height="85dp"
+        android:layout_marginBottom="420dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/minus"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.082"
+        app:layout_constraintHorizontal_bias="0.187"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
         android:id="@+id/plus"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="392dp"
-        android:src="@drawable/ic_launcher_foreground"
+        android:layout_width="80dp"
+        android:layout_height="85dp"
+        android:layout_marginBottom="420dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/plus"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.924"
+        app:layout_constraintHorizontal_bias="0.83"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
         android:id="@+id/open"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="84dp"
+        android:layout_height="60dp"
         android:layout_marginBottom="180dp"
-        android:src="@android:drawable/ic_notification_overlay"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/power_off_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

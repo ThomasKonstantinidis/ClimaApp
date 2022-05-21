@@ -55,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if(on){
                     Intent intent = new Intent(MainActivity.this, AirIntensityActivity.class);
+                    intent.putExtra("currentIntensity", state.getAirIntensity());
                     startActivity(intent);
                 }
             }
@@ -97,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if(on){
                     // Same situation as the back pressed
-                    onBackPressed();
+                    goodbye();
                 }
                 else{
                     temperatureText.setText(state.getTemperature() + CELCIUS);
@@ -133,9 +134,7 @@ public class MainActivity extends AppCompatActivity {
                     .setMessage("Θέλετε να απενεργοποιήσετε το κλιματιστικό;")
                     .setNegativeButton("Όχι", new DialogInterface.OnClickListener() {
                         @Override
-                        public void onClick(DialogInterface dialogInterface, int i) {
-                            on = true;
-                        }
+                        public void onClick(DialogInterface dialogInterface, int i) { on = true; }
                     })
                     .setPositiveButton("Ναι", new DialogInterface.OnClickListener() {
                         @Override
@@ -190,7 +189,7 @@ public class MainActivity extends AppCompatActivity {
         final AlertDialog alert = alertDialogBuilder.create();
         alert.show();
 
-        new CountDownTimer( 1000, 1000){
+        new CountDownTimer( 500, 500){
             @Override
             public void onTick(long l) {}
 

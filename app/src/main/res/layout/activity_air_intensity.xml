@@ -4,21 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AirType">
-
-    <ImageView
-        android:id="@+id/logo2"
-        android:layout_width="280dp"
-        android:layout_height="109dp"
-        android:layout_marginBottom="480dp"
-        android:src="@drawable/clima"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+    tools:context=".AirIntensityActivity">
 
     <Button
-        android:id="@+id/back"
+        android:id="@+id/back2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="60dp"
@@ -30,49 +19,49 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <CheckBox
-        android:id="@+id/fan"
+        android:id="@+id/high"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="164dp"
-        android:text="Ανεμιστήρας"
+        android:layout_marginBottom="160dp"
+        android:text="Υψηλή Ένταση"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.343"
+        app:layout_constraintHorizontal_bias="0.353"
         app:layout_constraintStart_toStartOf="parent" />
 
     <CheckBox
-        android:id="@+id/cold_air"
+        android:id="@+id/medium"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="244dp"
-        android:text="Κρύος Αέρας"
+        android:layout_marginBottom="236dp"
+        android:text="Μέτρια Ένταση"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.342"
+        app:layout_constraintHorizontal_bias="0.36"
         app:layout_constraintStart_toStartOf="parent" />
 
     <CheckBox
-        android:id="@+id/warm_air"
+        android:id="@+id/low"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="324dp"
-        android:text="Ζεστός Αέρας"
+        android:layout_marginBottom="316dp"
+        android:text="Χαμηλή Ένταση"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintHorizontal_bias="0.36"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/intensitytext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="420dp"
-        android:text="Τύπος Αέρα"
-        android:textSize="20dp"
+        android:text="Ένταση Αέρα"
         android:textColor="#265DAF"
+        android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -80,35 +69,46 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="46dp"
-        android:layout_height="49dp"
-        android:layout_marginBottom="244dp"
+        android:id="@+id/logo3"
+        android:layout_width="280dp"
+        android:layout_height="109dp"
+        android:layout_marginBottom="480dp"
+        android:src="@drawable/clima"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.715"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/cold" />
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/lowview"
         android:layout_width="46dp"
         android:layout_height="49dp"
-        android:layout_marginBottom="324dp"
+        android:layout_marginBottom="316dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.715"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/warm" />
+        app:srcCompat="@drawable/low" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/mediumview"
         android:layout_width="46dp"
         android:layout_height="49dp"
-        android:layout_marginBottom="164dp"
+        android:layout_marginBottom="236dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.715"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/fan" />
+        app:srcCompat="@drawable/medium" />
+
+    <ImageView
+        android:id="@+id/highview"
+        android:layout_width="46dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="160dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.715"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/high" />
 </androidx.constraintlayout.widget.ConstraintLayout>

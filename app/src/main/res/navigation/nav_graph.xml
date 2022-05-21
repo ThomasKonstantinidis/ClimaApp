@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="com.example.project.AirTypeActivity"
+        android:name="com.example.project.AirType"
         android:label="@string/first_fragment_label"
         tools:layout="@layout/activity_main">
 
@@ -19,7 +19,7 @@
         android:id="@+id/SecondFragment"
         android:name="com.example.project.AirIntensityActivity"
         android:label="@string/second_fragment_label"
-        tools:layout="@layout/air_type">
+        tools:layout="@layout/activity_air_type">
 
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"

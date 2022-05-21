@@ -10,9 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Project">
         <activity
+            android:name=".AirIntensityActivity"
+            android:exported="false" />
+        <activity
             android:name=".AirType"
             android:exported="false" />
-        <activity android:name=".AirTypeActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true"

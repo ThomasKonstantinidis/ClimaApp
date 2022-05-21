@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.CountDownTimer;
 import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
 
 import android.widget.Button;
@@ -54,15 +55,22 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if(on){
                     Intent intent = new Intent(MainActivity.this, AirIntensityActivity.class);
+                    startActivity(intent);
                 }
             }
         });
-
+        Button LocationPageButton = (Button) findViewById(R.id.btnLocationPage);
+        LocationPageButton.setOnClickListener(new View.OnClickListener({
+        public void onClick(View _view) {
+            Intent i = new Intent(MainActivity.this,TheActivityTheclassNameYouWannGoTo.class);
+            startActivity(i);
+        }
         this.airTypeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 // to go to an other class
                 Intent intent = new Intent(MainActivity.this, AirTypeActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -109,6 +117,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        this.helpButton = (Button)findViewById(R.id.help);
+        helpButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                helpPanel(R.layout.help_panel);
+            }
+        });
+
     }
 
     public void onBackPressed(){
@@ -184,5 +201,22 @@ public class MainActivity extends AppCompatActivity {
                 alert.dismiss();
             }
         }.start();
+    }
+
+    public void helpPanel(int xmlFile){
+        LayoutInflater inflater = LayoutInflater.from(MainActivity.this);
+        View view = inflater.inflate(xmlFile, null);
+
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(MainActivity.this);
+        alertDialogBuilder.setView(view);
+        alertDialogBuilder.setCancelable(false).setPositiveButton("Πίσω", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                dialogInterface.cancel();
+            }
+        });
+
+        AlertDialog alert = alertDialogBuilder.create();
+        alert.show();
     }
 }

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding = "16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/helpMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Καλως ήλθατε στην βοήθεια.\n\nΕπισκόπηση των λειτουργιών από πάνω προς τα κάτω: \n\n1)Το κουμπί αφαίρεσης μειώνει την θερμοκρασία.\n\n2)Το κουμπί πρόσθεσης αυξάνει την θερμοκρασία. \n\n3)Με το κουμπί τύπος αέρα μπορείτε να αλλάξετε τον τύπου του αέρα σε (κρύο/ζεστό/ανεμιστήρας). \n\n4)Με το κουμπί ένταση αέρα μπορείτε να ρυθμίσετε την δύναμη του αέρα σε (υψηλή/μέτρια/χαμηλή). \n\n5)Με το κεντρικό κουμπί ενεργοποίησης μπρορείτε να ενεργοποιήσετε ή να απενεργοποιήσετε το κλιματιστικό. \n\n6)Με το κουμπί έξοδος μπορείτε να αποχωρήσετε απο την εφαρμογή Haier Mobile και το κλιματιστικό σας να παραμείνει στην κατάσταση που το αφήσατε. \n\n\nΓια οποιαδήποτε άλλη πληροφορία καλέστε στο κεντρικό τμήμα εξυπηρέτησης πελατών μας στο 2104558699."
+                android:textAlignment="inherit"
+                android:textAllCaps="false"
+                android:textDirection="firstStrongRtl"
+                android:textSize="36dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

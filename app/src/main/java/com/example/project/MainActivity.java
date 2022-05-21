@@ -59,18 +59,16 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-        Button LocationPageButton = (Button) findViewById(R.id.btnLocationPage);
-        LocationPageButton.setOnClickListener(new View.OnClickListener({
-        public void onClick(View _view) {
-            Intent i = new Intent(MainActivity.this,TheActivityTheclassNameYouWannGoTo.class);
-            startActivity(i);
-        }
+
         this.airTypeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 // to go to an other class
-                Intent intent = new Intent(MainActivity.this, AirTypeActivity.class);
-                startActivity(intent);
+                if(on) {
+                    Intent intent = new Intent(MainActivity.this, AirType.class);
+                    intent.putExtra("currentType", state.getAirType());
+                    startActivity(intent);
+                }
             }
         });
 
